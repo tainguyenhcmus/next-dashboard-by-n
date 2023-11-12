@@ -3,7 +3,13 @@ import Link from 'next/link';
 import styles from '@/app/ui//home.module.css';
 import { lusitana } from '@/app/ui/fonts';
 import Image from 'next/image';
+import { Metadata } from 'next';
 
+export const metadata: Metadata = {
+  title: 'Acme Dashboard',
+  description: 'The official Next.js Course Dashboard, built with App Router.',
+  metadataBase: new URL('https://next-learn-dashboard.vercel.sh'),
+};
 export default function Page() {
   return (
     <main className="flex min-h-screen flex-col p-6">
